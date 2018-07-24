@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Setup routing which corresponds with reactjs SPA routing
+Route::group(['prefix' => 'movie'], function () {
+    Route::get('{page}', function ()    {
+        return view('welcome');
+    })->where('page', '(list|detail)');
+});
+// Setup routing which corresponds with reactjs SPA routing
+Route::get('/search/{query}', function () {
+    return view('welcome');
+})->where('query', '(.+)');
