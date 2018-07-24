@@ -16,7 +16,7 @@
 <script>
     window.API_KEY = "{{ env('API_KEY') }}";
 </script>
-<script type="text/javascript" src="/static/js/main.d2fd3964.js">
+<script type="text/javascript" src="/static/js/main.abc142b8.js">
 </script>
 </body>
 </html>
